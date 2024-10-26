@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subscription Plans</title>
+  
+  <link rel="stylesheet" href="gym.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background: linear-gradient(rgb(0, 0, 0), rgb(28, 28, 28),rgb(105, 103, 103),black);
+
+    }
+
+    .container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .plan-box {
+      flex: 1;
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+      text-align: center;
+    }
+
+    .silver {
+      background-color: #403f3f;
+    }
+
+    .gold {
+      background-color: #4c4c2c;
+    }
+
+    .platinum {
+      background-color: #2f4b2e;
+    }
+
+    .plan-title {
+      font-size: 1.5em;
+      margin-bottom: 10px;
+    }
+.menu{
+  position: absolute;
+  width: 100%;
+  top: 0px;
+}
+    .plan-price {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    .plan-description {
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    .subscribe-button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #38625e; ;
+      font-size: 1em;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .subscribe-button:hover {
+      background-color: #29a396;
+    }
+
+  </style>
+</head>
+<body>
+  
+  <div class="menu">
+    <div class="container flex">
+      
+
+
+
+
+        <div class="mobile-btn">
+            <ion-icon name="grid"></ion-icon>
+        </div>
+        <div class="logo">
+            <img src="logo.jpg" alt="" />
+        </div>
+
+        <ul class="nav">
+            <li class="nav-item"><a href="/index.html">Home</a></li>
+            <li class="nav-item"><a href="/inde.html#why-us">Features</a></li>
+            <li class="nav-item"><a href="/index.html#explore">Explore</a></li>
+            <li class="nav-item"><a href="subscription.html">Subscription</a></li>
+        </ul>
+
+        <a href="registration.html" class="btn">Register</a>
+    </div>
+</div>
+
+  <div class="container">
+    <!-- Silver Plan -->
+    <div class="plan-box silver">
+      <h2 class="plan-title">Silver</h2>
+      <p class="plan-price">$9.99 / month</p>
+      <p class="plan-description">Basic features for personal use.</p>
+      <button class="subscribe-button">Subscribe</button>
+    </div>
+
+    <!-- Gold Plan -->
+    <div class="plan-box gold">
+      <h2 class="plan-title">Gold</h2>
+      <p class="plan-price">$19.99 / month</p>
+      <p class="plan-description">Extended features for small teams.</p>
+      <button class="subscribe-button">Subscribe</button>
+    </div>
+
+    <!-- Platinum Plan -->
+    <div class="plan-box platinum">
+      <h2 class="plan-title">Platinum</h2>
+      <p class="plan-price">$29.99 / month</p>
+      <p class="plan-description">All features for enterprise solutions.</p>
+      <button class="subscribe-button">Subscribe</button>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gym Registration</title>
+  <style>
+ 
+ 
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+
+    body {
+      background-color: #121212;
+      color: #ffffff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .registration-container {
+      background-color: #1e1e1e;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      width: 300px;
+    }
+
+    .registration-container h1 {
+      text-align: center;
+      color: #29a396;
+      margin-bottom: 1rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+    }
+
+    label {
+      font-size: 0.9rem;
+      color: #aaaaaa;
+      margin-bottom: 0.3rem;
+      display: block;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"],
+    input[type="tel"] {
+      width: 100%;
+      padding: 0.5rem;
+      border-radius: 4px;
+      border: none;
+      outline: none;
+      background-color: #333333;
+      color: #ffffff;
+    }
+
+    input::placeholder {
+      color: #888888;
+    }
+
+    .register-btn {
+      width: 100%;
+      padding: 0.7rem;
+      border: none;
+      border-radius: 4px;
+      background-color: #29a396;
+      color: #ffffff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .register-btn:hover {
+      background-color:  #29a396;;
+    }
+
+    .terms {
+      font-size: 0.8rem;
+      color: #888888;
+      margin-top: 1rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="registration-container">
+    <h1>Gym Registration</h1>
+    <form>
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="phone">Phone</label>
+        <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+      </div>
+      <button type="submit" class="register-btn"><a href="success.html" style="color: white;">Register</a></button>
+      <div class="terms">
+        By signing up, you agree to our <a href="#" style="  color: #29a396; text-decoration: none;">Terms & Conditions</a>.
+      </div>
+    </form>
+  </div>
+</body>
+</html>
